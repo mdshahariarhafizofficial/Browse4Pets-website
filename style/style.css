@@ -6,3 +6,31 @@ body{
 body h1, h2, h3, h4, h5, h6{
     font-family: "ADLaM Display", serif;
 }
+/* Common Css Style */
+.container-mid{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+body a{
+    outline: none;
+}
+body a:hover{
+    transition: 0.4s;
+}
+
+
+/*////////////// Responsive Media Query ////////////////*/
+@media screen and (max-width: 640px) {
+    header nav{
+        border-bottom: 1px solid black;
+    }
+    #nav-end{
+        display: none;
+    }
+    #nav-start{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+}
