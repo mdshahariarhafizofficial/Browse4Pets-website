@@ -8,8 +8,8 @@ body h1, h2, h3, h4, h5, h6{
 }
 /* Common Css Style */
 .container-mid{
-    max-width: 1320px;
-    margin: 0 auto;
+    max-width: 1320px !important;
+    margin: 0 auto !important;
 }
 body a{
     outline: none;
