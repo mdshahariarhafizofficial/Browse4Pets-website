@@ -21,6 +21,9 @@ body a:hover{
 
 /*////////////// Responsive Media Query ////////////////*/
 @media screen and (max-width: 640px) {
+    .container-mid{
+        max-width: 100% !important;
+    }
     header nav{
         border-bottom: 1px solid black;
     }
