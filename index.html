@@ -86,12 +86,15 @@
             </div>
          </nav>
         <!-- Hero Section Start -->
-         <section class="hide hero-section pt-8 md:pt-5 md:px-10 lg:pt-24 h-[750px] md:min-h-[750px] lg:min-h-[750px] bg-[url(./assets/cat-big.png)] bg-no-repeat bg-center bg-contain">
+         <section class="relative hero-section h-[550px] sm:h-[620px] md:h-[650px] lg:h-[750px] pt-8 md:pt-5 md:px-10 lg:pt-24">
             <div class="container-mid max-w-[1320px] mx-auto">
-                <div class="hero-text max-w-2xl px-5 md:px-0 lg:px-0">
+                <div class="hero-text max-w-2xl px-5 md:px-0 lg:px-0 z-50">
                     <h1 class="text-4xl md:text-6xl lg:text-6xl font-normal text-black">Pamper Your Pet,<br> Because They Deserve<br> the Bes</h1>
                     <p class="text-base md:text-xl lg:text-xl font-regular leading-8 my-6">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
                     <button class="bg-pet-primary-color rounded-lg px-8 py-3 text-xl font-normal hover:bg-black hover:text-white cursor-pointer">Find a pet</button>
+                </div>
+                <div class="absolute bottom-0 -z-10">
+                  <img class="w-full" src="assets/cat-big.png" alt="">
                 </div>
             </div>
          </section>
@@ -101,11 +104,11 @@
      <main>
 
         <!-- Categories Section Start -->
-         <section class="hide categories-section my-14 md:my-28 lg:my-28">
+         <section class=" categories-section my-14 md:my-28 lg:my-28">
           <div class="container-mid max-w-[1320px] mx-auto">
             <h2 class="text-4xl text-black px-5">Browse By Categories</h2>
 
-            <div class="categories-container grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-6 lg:gap-6 px-5 mt-10">
+            <div class="categories-container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-6 lg:gap-6 px-5 mt-10">
 
               <!-- Card - 1 -->
               <div class="categories-card bg-pet-primary-color max-w-52 text-center px-12 py-9 rounded-xl">
