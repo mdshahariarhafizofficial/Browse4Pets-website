@@ -44,30 +44,19 @@
      <header>
         <!-- Nav Section Start -->
          <nav class="md:py-7 lg:p-7 bg-[#FFF9F4]">
-            <div class="container-mid">
-                <div class="navbar" id="navbar-main">
+            <div class="container-mid max-w-[1320px] mx-auto">
+
+                <div class="navbar md:gap-10" id="navbar-main">
 
                     <!-- Nav Start -->
-                    <div class="navbar-start" id="nav-start">
+                    <div class="w-full navbar-start justify-between sm:justify-start flex-row-reverse sm:flex-row"  id="nav-start">
                       <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                          <!-- <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"> -->
                             <i class="fa-solid fa-bars text-2xl"></i>
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M4 6h16M4 12h8m-8 6h16" />
-                          </svg>
                         </div>
                         <ul
                           tabindex="0"
-                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl font-normal text-black">
+                          class="menu menu-sm dropdown-content left-[-150px] sm:left-0 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl font-normal text-black">
                           <li><a class="hover:text-pet-primary-color">Find a pet</a></li>
                           <li><a class="hover:text-pet-primary-color">Breeds</a></li>
                           <li><a class="hover:text-pet-primary-color">Contact us</a></li>
@@ -78,25 +67,27 @@
 
                     <!-- Nav Center -->
                     <div class="navbar-center hidden lg:flex">
-                      <ul class="menu menu-horizontal px-1 text-xl font-normal text-black">
+                      <ul class="menu menu-horizontal px-1 text-xl font-normal text-black gap-8">
                         <li><a class="hover:bg-transparent hover:text-pet-primary-color">Find a pet</a></li>
                         <li><a class="hover:bg-transparent hover:text-pet-primary-color">Breeds</a></li>
                         <li><a class="hover:bg-transparent hover:text-pet-primary-color">Contact us</a></li>
                       </ul>
                     </div>
                     <!-- nav end -->
-                    <div id="nav-end" class="navbar-end flex gap-5 items-center">
-                      <span><i class="fa-regular fa-bell text-2xl cursor-pointer hover:text-pet-primary-color"></i></span>
-                      <span><i class="fa-solid fa-magnifying-glass text-2xl cursor-pointer hover:text-pet-primary-color"></i></span>
-                      <a class=" bg-white border border-pet-primary-color rounded-lg px-8 py-3 text-xl font-normal hover:bg-black hover:text-white cursor-pointer">Login</a>
-                      <a class="bg-pet-primary-color rounded-lg px-8 py-3 text-xl font-normal hover:bg-black hover:text-white cursor-pointer">Register</a>
+                    <div id="nav-end" class="navbar-end hidden sm:hidden md:block lg:block">
+                      <div class="flex items-center justify-end gap-4">
+                        <span><i class="fa-regular fa-bell text-2xl cursor-pointer hover:text-pet-primary-color"></i></span>
+                        <span><i class="fa-solid fa-magnifying-glass text-2xl cursor-pointer hover:text-pet-primary-color"></i></span>
+                        <a class=" bg-white border border-pet-primary-color rounded-lg px-8 py-3 text-xl font-normal hover:bg-black hover:text-white cursor-pointer">Login</a>
+                        <a class="bg-pet-primary-color rounded-lg px-8 py-3 text-xl font-normal hover:bg-black hover:text-white cursor-pointer">Register</a>
+                      </div>
                     </div>
                   </div>
             </div>
          </nav>
         <!-- Hero Section Start -->
-         <section class="hero-section pt-8 md:pt-5 md:px-10 lg:pt-24 h-[750px] md:min-h-[750px] lg:min-h-[750px] bg-[url(./assets/cat-big.png)] bg-no-repeat bg-center bg-contain">
-            <div class="container-mid">
+         <section class="hide hero-section pt-8 md:pt-5 md:px-10 lg:pt-24 h-[750px] md:min-h-[750px] lg:min-h-[750px] bg-[url(./assets/cat-big.png)] bg-no-repeat bg-center bg-contain">
+            <div class="container-mid max-w-[1320px] mx-auto">
                 <div class="hero-text max-w-2xl px-5 md:px-0 lg:px-0">
                     <h1 class="text-4xl md:text-6xl lg:text-6xl font-normal text-black">Pamper Your Pet,<br> Because They Deserve<br> the Bes</h1>
                     <p class="text-base md:text-xl lg:text-xl font-regular leading-8 my-6">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
@@ -110,11 +101,11 @@
      <main>
 
         <!-- Categories Section Start -->
-         <section class="categories-section my-14 md:my-28 lg:my-28">
-          <div class="container-mid">
+         <section class="hide categories-section my-14 md:my-28 lg:my-28">
+          <div class="container-mid max-w-[1320px] mx-auto">
             <h2 class="text-4xl text-black px-5">Browse By Categories</h2>
 
-            <div class="categories-container grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 px-5 mt-10">
+            <div class="categories-container grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-6 lg:gap-6 px-5 mt-10">
 
               <!-- Card - 1 -->
               <div class="categories-card bg-pet-primary-color max-w-52 text-center px-12 py-9 rounded-xl">
@@ -124,33 +115,33 @@
               </div>
               <!-- Card - 2 -->
               <div class="categories-card bg-pet-primary-color max-w-52 text-center px-12 py-9 rounded-xl">
-                <img class="bg-white p-5 rounded-full mx-auto mb-3" src="assets/dog-cartoon.png" alt="">
-                <h3 class="text-lg mb-3 font-bold text-black">Dog</h3>
+                <img class="bg-white p-5 rounded-full mx-auto mb-3" src="assets/fish-cartoon.png" alt="">
+                <h3 class="text-lg mb-3 font-bold text-black">Fish</h3>
                 <p class="text-base text-pet-secondary-color font-medium">3 items</p>
               </div>
               <!-- Card - 3 -->
               <div class="categories-card bg-pet-primary-color max-w-52 text-center px-12 py-9 rounded-xl">
-                <img class="bg-white p-5 rounded-full mx-auto mb-3" src="assets/dog-cartoon.png" alt="">
-                <h3 class="text-lg mb-3 font-bold text-black">Dog</h3>
+                <img class="bg-white p-5 rounded-full mx-auto mb-3" src="assets/cat-cartoon.png" alt="">
+                <h3 class="text-lg mb-3 font-bold text-black">Cat</h3>
                 <p class="text-base text-pet-secondary-color font-medium">3 items</p>
               </div>
               <!-- Card - 4 -->
               <div class="categories-card bg-pet-primary-color max-w-52 text-center px-12 py-9 rounded-xl">
-                <img class="bg-white p-5 rounded-full mx-auto mb-3" src="assets/dog-cartoon.png" alt="">
-                <h3 class="text-lg mb-3 font-bold text-black">Dog</h3>
+                <img class="bg-white p-5 rounded-full mx-auto mb-3" src="assets/bird-cartoon.png" alt="">
+                <h3 class="text-lg mb-3 font-bold text-black">Birds</h3>
                 <p class="text-base text-pet-secondary-color font-medium">3 items</p>
               </div>
               <!-- Card - 5 -->
               <div class="categories-card bg-pet-primary-color max-w-52 text-center px-12 py-9 rounded-xl">
-                <img class="bg-white p-5 rounded-full mx-auto mb-3" src="assets/dog-cartoon.png" alt="">
-                <h3 class="text-lg mb-3 font-bold text-black">Dog</h3>
+                <img class="bg-white p-5 rounded-full mx-auto mb-3" src="assets/mouse-cartoon.png" alt="">
+                <h3 class="text-lg mb-3 font-bold text-black">Small pet</h3>
                 <p class="text-base text-pet-secondary-color font-medium">3 items</p>
               </div>
               <!-- Card - 6 -->
               <div class="categories-card bg-pet-primary-color max-w-52 text-center px-12 py-9 rounded-xl">
-                <img class="bg-white p-5 rounded-full mx-auto mb-3" src="assets/dog-cartoon.png" alt="">
-                <h3 class="text-lg mb-3 font-bold text-black">Dog</h3>
-                <p class="text-base text-pet-secondary-color font-medium">3 items</p>
+                <img class="bg-white p-5 rounded-full mx-auto mb-3" src="assets/rabbit-cartoon.png" alt="">
+                <h3 class="text-lg mb-3 font-bold text-black">Rabit</h3>
+                <p class="text-base text-pet-secondary-color font-medium">2 items</p>
               </div>
 
             </div>
